@@ -1,3 +1,25 @@
-<footer>
-	<p>By <a href="http://taniarascia.com">Tania</p>
+<footer style="background-color: #EED971FF; color: saddlebrown; font-family: 'Space Grotesk', sans-serif; border-top: 8px solid saddlebrown; padding-bottom: 30px; padding-top: 30px;">
+	<div class="container-fluid">
+		<div class="row text-center">
+			<div class="col-md-4"></div>
+			{% for page in site.pages %} {% if page.title %}
+			<div class="col-md-2">
+				<a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+			</div>
+			{% endif %} {% endfor %}
+			<div class="col-md-4"></div>
+		</div>
+		<div class="row text-center">
+			<div class="col-md-12">
+				<p>&#xa9; Eccentric Club 2023</p>
+				<p>Design and Developed by <a href="http://www.maverickgroup.tech">Maverick Group</a></p>
+			</div>
+		</div>
+		<div class="row text-center">
+			<div class="col-md-12">
+				<h2 style="font-size: 2rem;">&#10084;</h2>
+			</div>
+		</div>
+	</div>
+
 </footer>

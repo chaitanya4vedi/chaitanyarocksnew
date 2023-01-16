@@ -2,7 +2,55 @@
 layout: default
 ---
 
-<h2>{{ page.title }}</h2>
-<time>{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</time>
+<div class="container" style="padding-top: 10px; color: saddlebrown; padding-bottom: 10px; font-family: 'Space Grotesk', sans-serif; font-weight: bolder;">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>{{ page.title }}</h2>
+        </div>
+    </div>
+</div>
 
-{{ content }}
+
+<div class="container" style="font-family: 'Space Grotesk', sans-serif; font-weight: bolder;">
+    <div class="row">
+        <div class="col-md-6">
+            <time>{{ page.date | date: "%b %-d, %Y, %I:%M %p" }}{% if page.meta %} • {{ page.meta }}{% endif %}</time>
+        </div>
+        <div class="col-md-6">
+            <p class="float-md-end">
+                <!-- Look the author details up from the site config. -->
+                {% assign author = site.data.authors[page.author] %}
+
+                <!-- Output author details if some exist. -->
+                {% if author %}
+                <span>
+        <!-- Personal Info. -->
+        Written by <a href="{{ author.web }}">{{ author.name }}</a>
+    </span>
+                {% endif %}
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            {% if author.bio %}
+            {% include author_bio.html %}
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+<div class="container" style="font-family: 'Karla', sans-serif; padding-top: 10px; padding-bottom: 10px;">
+    <div class="row">
+        <div class="col-md-12">
+            {{ content }}
+        </div>
+    </div>
+</div>
+
+
+
+

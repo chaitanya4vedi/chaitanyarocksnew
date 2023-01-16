@@ -1,12 +1,44 @@
 ---
 layout: default
 ---
+<div class="container" style="padding-top: 20px; padding-bottom: 20px;">
+	<div class="row">
+		<div class="col-md-12">
+			<h2 style="color: saddlebrown; font-weight: bolder; font-family: 'Space Grotesk', sans-serif;">Blog</h2>
+		</div>
+	</div>
+</div>
 
-<h2>Blog</h2>
-{% for post in site.posts %}
-		<time>{{ post.date | date: "%b %-d, %Y" }}</time>
-		<h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-{% endfor %}
+<div class="container">
+	<div class="row">
+			{% for post in site.posts %}
+		<div class="col-md-4" style="margin-bottom: 20px;">
+			<div class="card" style="font-family: 'Space Grotesk', sans-serif;">
+				<div class="card-body">
+					<h5 class="card-title" style="color: saddlebrown; font-weight: bolder;">
+						{{ post.title }}
+					</h5>
+					{% if post.excerpt %}
+					{{ post.excerpt }}
+					{% endif %}
+					<a style="background-color: #EED971FF;" class="btn btn-warning" href="{{ post.url | prepend: site.baseurl }}">Read More &#x2192;</a>
+				</div>
+				<div class="card-footer">
+					<time>{{ post.date | date: "%b %-d, %Y, %I:%M %p" }}</time>
+				</div>
+			</div>
+		</div>
+			{% endfor %}
+	</div>
+</div>
 
-<p>subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+
+		</div>
+	</div>
+</div>
+
 
