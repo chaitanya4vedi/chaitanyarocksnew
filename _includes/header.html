@@ -1,21 +1,25 @@
 
-<nav class="navbar navbar-expand-lg">
-	<div class="container text-center">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<div class="container-fluid">
 		<a class="navbar-brand" href="{{ "/index" | prepend: site.baseurl }}">Eccentric Club</a>
 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<img src="/assets/images/menu.png" alt="menu bar">
+			<span class="navbar-toggler-icon"></span>
 		</button>
-		<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav">
-						{% for page in site.pages %} {% if page.title %}
-						<li class="nav-item">
-						<a class="nav-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-						</li>
-						{% endif %} {% endfor %}
-						<li class="nav-item">
-						<a class="nav-link" href="{{ "/blog" | prepend: site.baseurl }}">Blog</a>
-						</li>
+				{% for page in site.pages %} {% if page.title %}
+				<li class="nav-item">
+					<a class="nav-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+				</li>
+				{% endif %} {% endfor %}
+				<li class="nav-item">
+					<a class="nav-link" href="{{ "/blog" | prepend: site.baseurl }}">Blog</a>
+				</li>
 			</ul>
+			<form class="d-flex">
+				<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+				<button class="btn btn-outline-success" type="submit">Search</button>
+			</form>
 		</div>
 	</div>
 </nav>
