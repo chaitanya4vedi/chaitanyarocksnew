@@ -11,21 +11,20 @@ body {
 }
 
 .navbar {
-    color: saddlebrown;
-    background-color: #EED971FF;
-    font-weight: bolder;
-    font-family: 'Space Grotesk', sans-serif;
+    color: black;
+    background-color: #ffb92a;
+    font-family: 'Inter', sans-serif;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-top: 5px solid saddlebrown;
+    border-top: 5px solid #05386B;
 }
 
 .navbar a {
-    color: saddlebrown;
-    font-weight: bolder;
-    font-family: 'Space Grotesk', sans-serif;
+    color: black;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
 }
 
 .navbar a:hover {
-    color: brown;
+    color: white;
     font-weight: bolder;
 }
