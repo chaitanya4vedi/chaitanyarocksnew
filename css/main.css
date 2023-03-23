@@ -12,19 +12,17 @@ body {
 
 .navbar {
     color: black;
-    background-color: #ffb92a;
-    font-family: 'Inter', sans-serif;
+    background-color: lightgreen;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-top: 5px solid #05386B;
 }
 
 .navbar a {
     color: black;
-    font-weight: 800;
-    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-family: 'Space Grotesk', sans-serif;
 }
 
 .navbar a:hover {
-    color: white;
+    color: darkgreen;
     font-weight: bolder;
 }

@@ -1,25 +1,84 @@
 <!-- Footer Background-Image Container -->
-<div class="container-fluid" style="min-height: 725px; background-repeat: no-repeat; background-image: url(/assets/images/bg4.png); font-family: 'Space Grotesk', sans-serif; color: black;">
-	<div class="row" style="min-height: 80px;"></div>
-	<div class="row" style="min-height: 80px;"></div>
-	<div class="row" style="padding-top: 75px;">
-		<div class="col-md-2"></div>
-		<div class="col-md-6">
-			<h2 class="display-6" style="font-weight: bolder;">Delhi Public School<br/>
-				Awaits You
-			</h2>
-			<p style="font-weight: bolder; font-size: 20px;">Offering extraordinary freedom to explore, to collaborate, and to challenge yourself</p>
-			<a class="btn btn-warning" href="{{ "/eligibility" | prepend: site.baseurl }}" style="margin-bottom: 10px; font-family: 'Space Mono', monospace;" class="button-59" role="button">Check Eligibility Now</a>
+<div class="container-fluid" style="min-height: 600px; background-color: lightgreen; font-family: 'Space Grotesk', sans-serif; color: black;">
+	<div class="row" style="min-height: 60px;"></div>
+	<div class="row">
+		<div class="col-md-1">
 		</div>
-		<div class="col-md-4">
+		<div class="col-md-2">
+			<h2 style="font-weight: bolder;">Pages</h2>
+			<a href="" style="color: black;">Home &#8594;</a>
+			<br>
+			<br>
+			<a href="" style="color: black;">About Us &#8594;</a>
+			<br>
+			<br>
+			<a href="" style="color: black;">Rooms &#8594;</a>
+			<br>
+			<br>
+			<a href="" style="color: black;">Features &#8594;</a>
+			<br>
+			<br>
+			<a href="" style="color: black;">Gallery &#8594;</a>
+			<br>
+			<br>
+			<a href="" style="color: black;">Walkthrough &#8594;</a>
+			<br>
+			<br>
+			<a href="" style="color: black;">Location &#8594;</a>
+			<br>
+			<br>
+			<a href="" style="color: black;">Apply Now &#8594;</a>
+			<br>
+			<br>
+			<a href="" style="color: black;">Contact Us &#8594;</a>
+			<br>
+			<br>
+			<a href="" style="color: black;">Privacy Policy &#8594;</a>
+		</div>
+		<div class="col-md-3">
+			<h2 style="font-weight: bolder;">Maps & Videos</h2>
+			<a href="" style="color: black;">Take a Virtual Walkthrough &#8594;</a>
+			<br>
+			<br>
+			<a href="" style="color: black;">Map of Jagriti Dham &#8594;</a>
+			<br>
+			<br>
+			<a href="" style="color: black;">Room Plan &#8594;</a>
+			<br>
+			<br>
+			<a href="" style="color: black;">Floor Plans &#8594;</a>
+		</div>
+		<div class="col-md-3">
+			<h2 style="font-weight: bolder;">Contact Us</h2>
+			<p>
+				Jagriti Dham
+				Opposite to IBIZA resort
+				Kriparampur
+				Diamond Harbour Road
+				<br>
+				Kolkata – 743503
+				<br>
+				Phone: India No. 88200 22022
+				<br>
+				Email: contact@jagritidham.com
+			</p>
+		</div>
+		<div class="col-md-3">
+			<h2 style="font-weight: bolder;">Follow Us</h2>
+			<a href=""><i class="fa fa-facebook" style="color: black; font-size: x-large; padding: 10px"></i></a>
+			<a href=""><i class="fa fa-linkedin" style="color: black; font-size: x-large; padding: 10px"></i></a>
+			<a href=""><i class="fa fa-twitter" style="color: black; font-size: x-large; padding: 10px"></i></a>
+			<a href=""><i class="fa fa-instagram" style="color: black; font-size: x-large; padding: 10px"></i></a>
+			<a href=""><i class="fa fa-youtube" style="color: black; font-size: x-large; padding: 10px"></i></a>
 		</div>
 	</div>
+	<div class="row" style="min-height: 80px;"></div>
 </div>
 
-<footer style="background-color: #ffb92a; color: black; font-family: 'Space Grotesk', sans-serif; border-top: 8px solid #05386B; padding-bottom: 30px; padding-top: 30px;">
+<footer style="background-color: black; color: white; font-family: 'Space Grotesk', sans-serif; border-top: 8px solid darkgreen; padding-bottom: 30px; padding-top: 30px;">
 	<div class="container-fluid">
 		<div class="row text-center">
-			<img src="/assets/images/bglogo1.png" alt="Logo" style="width: 150px; margin: 0 auto;">
+			<img src="/assets/images/logo.png" alt="Logo" style="width: 200px; margin: 0 auto;">
 		</div>
 		<div class="row text-center">
 			<div class="col-md-4"></div>
@@ -35,7 +94,10 @@
 		</div>
 		<div class="row text-center">
 			<div class="col-md-12">
-				<p>&#xa9; Delhi Public School 2023</p>
+				<p>&#xa9; Jagriti Dham 2015-2023. All rights reserved.</p>
+				<img src="http://www.jagritidham.com/images/promoters.png" alt="" style="width: 70px">
+				<p>An initiative of infinity group</p>
+				<p>Disclaimer: The Contents of this material are conceptual & may / may not form part of the final product. We reserve the right to change and modify the contents without prior notice & shall not be liable to anyone for the changes / improvements made.</p>
 				<p>Design and Developed by <a href="http://www.maverickgroup.tech">Maverick Group</a></p>
 			</div>
 		</div>
@@ -47,3 +109,13 @@
 	</div>
 
 </footer>
+
+<script>
+	function myFunction(imgs) {
+		var expandImg = document.getElementById("expandedImg");
+		var imgText = document.getElementById("imgtext");
+		expandImg.src = imgs.src;
+		imgText.innerHTML = imgs.alt;
+		expandImg.parentElement.style.display = "block";
+	}
+</script>
