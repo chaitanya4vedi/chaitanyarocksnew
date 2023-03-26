@@ -1,28 +1,19 @@
-html, body {
+html,
+body {
     overflow-x: hidden;
 }
 
-body {
-
-}
-
-.navbar-brand {
-    font-family: 'Inter', sans-serif;
-}
-
 .navbar {
-    color: black;
-    background-color: lightgreen;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(7px);
 }
 
 .navbar a {
-    color: black;
-    font-weight: 700;
-    font-family: 'Space Grotesk', sans-serif;
+    color: darkgreen;
+    font-size: x-large;
+    font-family: 'Karla', sans-serif;
 }
 
 .navbar a:hover {
-    color: darkgreen;
-    font-weight: bolder;
+    color: mediumseagreen;
 }

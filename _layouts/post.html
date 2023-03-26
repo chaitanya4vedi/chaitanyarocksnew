@@ -2,10 +2,11 @@
 layout: default
 ---
 
-<div class="container" style="padding-top: 10px; color: saddlebrown; padding-bottom: 10px; font-family: 'Space Grotesk', sans-serif; font-weight: bolder;">
+<div class="container" style="padding: 75px 0; color: darkgreen;">
     <div class="row">
         <div class="col-md-12">
-            <h2>{{ page.title }}</h2>
+            <h2 class="display-5" style="font-family: 'Space Grotesk', sans-serif; font-weight: bolder;">{{ page.title
+                }}</h2>
         </div>
     </div>
 </div>
@@ -24,9 +25,9 @@ layout: default
                 <!-- Output author details if some exist. -->
                 {% if author %}
                 <span>
-        <!-- Personal Info. -->
-        Written by <a href="{{ author.web }}">{{ author.name }}</a>
-    </span>
+                    <!-- Personal Info. -->
+                    Written by <a href="{{ author.web }}">{{ author.name }}</a>
+                </span>
                 {% endif %}
             </p>
         </div>
@@ -50,7 +51,3 @@ layout: default
         </div>
     </div>
 </div>
-
-
-
-

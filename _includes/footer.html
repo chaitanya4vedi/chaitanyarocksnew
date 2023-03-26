@@ -1,91 +1,78 @@
 <!-- Footer Background-Image Container -->
-<div class="container-fluid" style="min-height: 600px; background-color: lightgreen; font-family: 'Space Grotesk', sans-serif; color: black;">
+<div class="container-fluid" style="min-height: 400px; background-color: lightgreen; font-family: 'Space Grotesk', sans-serif; color: black;">
 	<div class="row" style="min-height: 60px;"></div>
 	<div class="row">
 		<div class="col-md-1">
 		</div>
 		<div class="col-md-2">
 			<h2 style="font-weight: bolder;">Pages</h2>
-			<a href="" style="color: black;">Home &#8594;</a>
+			<a href="{{ "/index" | prepend: site.baseurl }}" style="color: black;">Home &#8594;</a>
 			<br>
 			<br>
-			<a href="" style="color: black;">About Us &#8594;</a>
+			<a href="{{ "/about" | prepend: site.baseurl }}" style="color: black;">About Us &#8594;</a>
 			<br>
 			<br>
-			<a href="" style="color: black;">Rooms &#8594;</a>
+			<a href="{{ "/contact" | prepend: site.baseurl }}" style="color: black;">Contact Us &#8594;</a>
 			<br>
 			<br>
-			<a href="" style="color: black;">Features &#8594;</a>
-			<br>
-			<br>
-			<a href="" style="color: black;">Gallery &#8594;</a>
-			<br>
-			<br>
-			<a href="" style="color: black;">Walkthrough &#8594;</a>
-			<br>
-			<br>
-			<a href="" style="color: black;">Location &#8594;</a>
-			<br>
-			<br>
-			<a href="" style="color: black;">Apply Now &#8594;</a>
-			<br>
-			<br>
-			<a href="" style="color: black;">Contact Us &#8594;</a>
-			<br>
-			<br>
-			<a href="" style="color: black;">Privacy Policy &#8594;</a>
+			<a href="{{ "/privacy" | prepend: site.baseurl }}" style="color: black;">Privacy Policy &#8594;</a>
+			<br><br>
+			<a href="{{ "/disclaimer" | prepend: site.baseurl }}" style="color: black;">Disclaimer &#8594;</a>
+
 		</div>
 		<div class="col-md-3">
 			<h2 style="font-weight: bolder;">Maps & Videos</h2>
-			<a href="" style="color: black;">Take a Virtual Walkthrough &#8594;</a>
-			<br>
-			<br>
-			<a href="" style="color: black;">Map of Jagriti Dham &#8594;</a>
-			<br>
-			<br>
-			<a href="" style="color: black;">Room Plan &#8594;</a>
-			<br>
-			<br>
-			<a href="" style="color: black;">Floor Plans &#8594;</a>
 		</div>
 		<div class="col-md-3">
 			<h2 style="font-weight: bolder;">Contact Us</h2>
 			<p>
-				Jagriti Dham
-				Opposite to IBIZA resort
-				Kriparampur
-				Diamond Harbour Road
+				Serampore
+				Kolkata
 				<br>
-				Kolkata – 743503
+				West Bengal, India – 712249
 				<br>
-				Phone: India No. 88200 22022
+				Phone: India No. 6289600415
 				<br>
-				Email: contact@jagritidham.com
+				Email: chaitanya4vedi@gmail.com
 			</p>
 		</div>
 		<div class="col-md-3">
 			<h2 style="font-weight: bolder;">Follow Us</h2>
 			<a href=""><i class="fa fa-facebook" style="color: black; font-size: x-large; padding: 10px"></i></a>
 			<a href=""><i class="fa fa-linkedin" style="color: black; font-size: x-large; padding: 10px"></i></a>
-			<a href=""><i class="fa fa-twitter" style="color: black; font-size: x-large; padding: 10px"></i></a>
-			<a href=""><i class="fa fa-instagram" style="color: black; font-size: x-large; padding: 10px"></i></a>
+			<a href="http://twitter.com/chaitanya4vedi"><i class="fa fa-twitter" style="color: black; font-size: x-large; padding: 10px"></i></a>
+			<a href="http://instagram.com/chaitanya4vedi"><i class="fa fa-instagram" style="color: black; font-size: x-large; padding: 10px"></i></a>
 			<a href=""><i class="fa fa-youtube" style="color: black; font-size: x-large; padding: 10px"></i></a>
 		</div>
 	</div>
 	<div class="row" style="min-height: 80px;"></div>
 </div>
 
-<footer style="background-color: black; color: white; font-family: 'Space Grotesk', sans-serif; border-top: 8px solid darkgreen; padding-bottom: 30px; padding-top: 30px;">
+<footer style="background-color: #107869; padding-bottom: 30px; padding-top: 30px;">
 	<div class="container-fluid">
-		<div class="row text-center">
-			<img src="/assets/images/logo.png" alt="Logo" style="width: 200px; margin: 0 auto;">
+		<div class="row">
+			<div class="col-md-12">
+				<h1 class="display-1" style="color: #9ACD32; background: -webkit-linear-gradient( floralwhite, papayawhip); font-weight: bolder; -webkit-background-clip: text; -webkit-text-fill-color: transparent; white-space: nowrap; font-family: 'Space Grotesk',sans-serif;">
+					WORKING-WORLDWIDE-INDIA-BASED
+				</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-1"></div>
+			<div class="col-md-4">
+				<h1 class="display-1" style="color: #9ACD32; background: -webkit-linear-gradient( yellow, yellowgreen); font-weight: bolder; -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-family: 'Space Grotesk',sans-serif;">
+					You dream it, We build it.
+				</h1>
+				<a class="btn btn-light" href="" style="font-family: 'Space Grotesk', sans-serif; font-weight: lighter; border-radius: 2em; color: darkgreen; font-size: larger;">Work with Maverick Group</a>
+			</div>
+			<div class="col-md-7"></div>
 		</div>
 		<div class="row text-center">
 			<div class="col-md-4"></div>
 			{% for page in site.pages %} {% if page.title %}
 			<div class="col-md-2">
 				<br>
-				<a class="btn btn-success" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+				<a class="btn btn-light" href="{{ page.url | prepend: site.baseurl }}" style="font-family: Karla, sans-serif; border-radius: 2em; font-weight: bolder; font-size: large; color: darkgreen">{{ page.title }}</a>
 				<br>
 				<br>
 			</div>
@@ -94,28 +81,14 @@
 		</div>
 		<div class="row text-center">
 			<div class="col-md-12">
-				<p>&#xa9; Jagriti Dham 2015-2023. All rights reserved.</p>
-				<img src="http://www.jagritidham.com/images/promoters.png" alt="" style="width: 70px">
-				<p>An initiative of infinity group</p>
-				<p>Disclaimer: The Contents of this material are conceptual & may / may not form part of the final product. We reserve the right to change and modify the contents without prior notice & shall not be liable to anyone for the changes / improvements made.</p>
-				<p>Design and Developed by <a href="http://www.maverickgroup.tech">Maverick Group</a></p>
-			</div>
+				</div>
 		</div>
 		<div class="row text-center">
 			<div class="col-md-12">
-				<h2 style="font-size: 2rem;">&#10084;</h2>
+				<h2 style="font-size: 2rem; color: yellow;">&#x2665;</h2>
 			</div>
 		</div>
 	</div>
 
 </footer>
 
-<script>
-	function myFunction(imgs) {
-		var expandImg = document.getElementById("expandedImg");
-		var imgText = document.getElementById("imgtext");
-		expandImg.src = imgs.src;
-		imgText.innerHTML = imgs.alt;
-		expandImg.parentElement.style.display = "block";
-	}
-</script>
