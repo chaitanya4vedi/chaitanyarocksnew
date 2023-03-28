@@ -20,16 +20,20 @@ layout: default
 	<div class="row">
 		{% for post in site.posts %}
 		<div class="col-md-6" style="margin-bottom: 20px;">
-			<div class="card" style="font-family: 'Space Grotesk', sans-serif; min-height: 330px; border-radius: 2em; padding: 15px;">
+			<div class="card" style="font-family: 'Space Grotesk', sans-serif; min-height: 330px; border-radius: 2em;">
 				<div class="card-body">
-					<h5 class="card-title" style="color: darkgreen; font-weight: bolder;">
+					<h5 class="card-title" style="color: darkgreen; font-weight: bolder; padding: 15px;">
 						{{ post.title }}
 					</h5>
 					{% if post.excerpt %}
+					<div class="row" style="padding: 15px;">
+						<div class="col-md-12">
 					{{ post.excerpt }}
 					{% endif %}
 					<a class="btn btn-success" href="{{ post.url | prepend: site.baseurl }}">Read More &#x2192;</a>
-				</div>
+						</div>
+					</div>
+						</div>
 				<div class="card-footer">
 					<time>{{ post.date | date: "%b %-d, %Y, %I:%M %p" }}</time>
 				</div>
