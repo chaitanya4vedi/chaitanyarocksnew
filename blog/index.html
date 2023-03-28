@@ -1,6 +1,11 @@
 ---
 layout: default
 ---
+<style>
+	body {
+		background-color: #EDE4E3;
+	}
+</style>
 <div class="container" style="padding: 100px 0; padding-bottom: 20px;">
 	<div class="row">
 		<div class="col-md-1"></div>
@@ -15,7 +20,7 @@ layout: default
 	<div class="row">
 		{% for post in site.posts %}
 		<div class="col-md-6" style="margin-bottom: 20px;">
-			<div class="card" style="font-family: 'Space Grotesk', sans-serif; min-height: 330px;">
+			<div class="card" style="font-family: 'Space Grotesk', sans-serif; min-height: 330px; border-radius: 2em; padding: 15px;">
 				<div class="card-body">
 					<h5 class="card-title" style="color: darkgreen; font-weight: bolder;">
 						{{ post.title }}
