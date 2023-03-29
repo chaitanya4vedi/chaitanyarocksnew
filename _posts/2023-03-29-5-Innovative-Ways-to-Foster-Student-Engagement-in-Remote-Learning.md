@@ -3,7 +3,6 @@ layout: post
 title: 5 Innovative Ways to Foster Student Engagement in Remote Learning
 description: In the current landscape of education, remote learning has become a necessity. However, with students logging in from home, keeping them engaged can be a challenge. In this blog post, we will explore five innovative ways to foster student engagement in remote learning, from gamification to interactive quizzes and beyond. With these strategies, you can keep your students motivated and invested in their education, even when they're learning from home.
 author: Chaitanya Chaturvedi
-categories: category1 category2
 image: Images1.png
 tag: Remote learning Student engagement Education technology Gamification Personalized learning Collaborative learning Interactive learning Project-based learning Online education Distance learning Digital learning Virtual learning Student motivation Interactive quizzes Adaptive learning Zoom breakout rooms Nearpod Google Classroom Education innovation Online teaching
 excerpt_separator: <!--more-->
