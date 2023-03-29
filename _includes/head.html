@@ -2,10 +2,10 @@
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+	<title>{% if page.title %}{{ page.title }}{% else %}{{ page.subtitle }}{% else %}{{ site.title }}{% endif %}</title>
 	<meta name="theme-color" content="darkgreen" />
 	<link rel="icon" type="image/x-icon" href="/assets/images/MaverickGroupLogoGreen.png">
-	<meta name="description" content="Maverick Group is a leading web design agency in Kolkata, offering customized web design and development solutions to help businesses thrive in the digital world. Contact us today to learn how we can help you. Best Web Development Agency in USA, UK, Australia, New Zealand. #1 Web Development Agency of India, Japan, Germany and South Korea." />
+	<meta name="description" content="{{% page.description %}}" />
 	<meta name="keywords" content=" web design agency, web development agency Hooghly, Kolkata, India, USA, UK, New Zealand, South Korea, Japan, Germany, web design,  web development, customized solutions, Maverick Group">
 	<meta name="author" content="Chaitanya Chaturvedi | Maverick Group | Best Web Design Agency in USA">
 	<meta property="og:title" content=" Best Web Design Agency in Kolkata and USA | Maverick Group" />
