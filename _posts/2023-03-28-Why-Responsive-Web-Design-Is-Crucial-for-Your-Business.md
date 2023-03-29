@@ -3,7 +3,6 @@ layout: post
 title: Why Responsive Web Design Is Crucial for Your Business
 description: Learn about the importance of responsive web design for your business and how it can help improve your website's user experience and search engine rankings. Maverick Group, a leading web development agency based in Kolkata, India, shares their expert insights on the topic.
 author: Chaitanya Chaturvedi
-categories: category1 category2
 tag: seo webdevelopment kolkata india usa
 excerpt_separator: <!--more-->
 ---

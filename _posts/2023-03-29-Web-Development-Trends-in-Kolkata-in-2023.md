@@ -3,7 +3,6 @@ layout: post
 title: Web Development Trends in Kolkata in 2023
 description: Kolkata is a hub for web development in India, and staying up-to-date with the latest trends is essential for success. In this blog post, we'll explore the top web development trends in Kolkata in 2023, from progressive web apps to voice search optimization.
 author: Chaitanya Chaturvedi
-categories: category1 category2
 excerpt_separator: <!--more-->
 ---
 
@@ -29,11 +28,3 @@ Cybersecurity is becoming increasingly critical in the web development industry,
 Conclusion
 <br>
 Kolkata is a hub for web development in India, and staying up-to-date with the latest trends is essential for success. In this blog post, we've explored the top web development trends in Kolkata in 2023, including progressive web apps, voice search optimization, artificial intelligence and machine learning, motion UI, and cybersecurity. By leveraging these trends, businesses can enhance their user experience, gain a competitive advantage, and ultimately, succeed in the web development industry.
-
-<div class="container">
-<div class="row">
-<div class="col-md-12">
-<div class="fb-comments" data-href="https://maverickgroup.tech/2023/03/29/web-development-trends-in-kolkata-in-2023" data-width="100%" data-numposts="10"></div>
-</div>
-</div>
-</div>
