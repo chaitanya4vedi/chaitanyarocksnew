@@ -3,6 +3,7 @@ layout: post
 title: 5 Tips for Effective Website Development that Boosts Your Online Presence
 description: Learn how to improve your website development skills and increase your online visibility with these 5 effective tips. Maverick Group, a leading web development agency based in Kolkata, India, shares their expert insights for website success.
 author: Chaitanya Chaturvedi
+categories: category1 category2
 tag: seo webdevelopment kolkata india usa
 excerpt_separator: <!--more-->
 ---

@@ -3,6 +3,7 @@ layout: post
 title: Web Development Trends in Kolkata in 2023
 description: Kolkata is a hub for web development in India, and staying up-to-date with the latest trends is essential for success. In this blog post, we'll explore the top web development trends in Kolkata in 2023, from progressive web apps to voice search optimization.
 author: Chaitanya Chaturvedi
+categories: category1 category2
 excerpt_separator: <!--more-->
 ---
 

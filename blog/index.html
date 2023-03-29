@@ -10,9 +10,8 @@ subtitle: Blog - Maverick Group | Best Web Development Agency in Kolkata, India
 <div class="container" style="padding: 100px 0; padding-bottom: 20px;">
 	<div class="row">
 		<div class="col-md-1"></div>
-		<div class="col-md-10">
-			<h2 class="display-4"
-				style="color: darkgreen; font-weight: bolder; font-family: 'Space Grotesk', sans-serif;">Blog</h2>
+			<div class="col-md-10">
+			<h2 class="display-4" style="color: darkgreen; font-weight: bolder; font-family: 'Space Grotesk', sans-serif;">Blog</h2>
 		</div>
 		<div class="col-md-1"></div>
 	</div>
@@ -30,13 +29,12 @@ subtitle: Blog - Maverick Group | Best Web Development Agency in Kolkata, India
 					{% if post.excerpt %}
 					<div class="row" style="padding: 15px;">
 						<div class="col-md-12">
-							{{ post.excerpt }}
-							{% endif %}
-							<a class="btn btn-success" href="{{ post.url | prepend: site.baseurl }}">Read More
-								&#x2192;</a>
+					{{ post.excerpt }}
+					{% endif %}
+					<a class="btn btn-success" href="{{ post.url | prepend: site.baseurl }}">Read More &#x2192;</a>
 						</div>
 					</div>
-				</div>
+						</div>
 				<div class="card-footer">
 					<time>{{ post.date | date: "%b %-d, %Y, %I:%M %p" }}</time>
 				</div>
