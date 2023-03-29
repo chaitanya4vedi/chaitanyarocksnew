@@ -15,6 +15,12 @@ layout: default
 
 <div class="container" style="font-family: 'Space Grotesk', sans-serif; font-weight: bolder;">
     <div class="row">
+        <div class="col-md-10"></div>
+        <div class="col-md-2">
+            <a href="{{ author.web }}"><img class="img-fluid" src="/assets/images/Author1.png" alt="" style="width: 100px;"></a>
+        </div>
+    </div>
+    <div class="row">
         <div class="col-md-6">
             <time>{{ page.date | date: "%b %-d, %Y, %I:%M %p" }}{% if page.meta %} • {{ page.meta }}{% endif %}</time>
         </div>
