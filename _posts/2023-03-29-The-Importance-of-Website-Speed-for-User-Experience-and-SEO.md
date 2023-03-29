@@ -7,7 +7,7 @@ tag: seo webdevelopment kolkata india usa
 excerpt_separator: <!--more-->
 ---
 
-<span style="font-size: x-large; font-weight: bolder;">Introduction</span><br><br>
+<span style="font-weight: bolder;">Introduction</span><br>
 Website speed is one of the most crucial factors that can impact your website's success.<!--more--> Slow loading times can negatively affect user experience and even harm your search engine rankings. In this blog post, we'll explore the importance of website speed for user experience and SEO and provide tips for improving your website's speed.
 <br><br>
 <span style="font-size: x-large; font-weight: bolder;">2 . User Experience</span><br>
