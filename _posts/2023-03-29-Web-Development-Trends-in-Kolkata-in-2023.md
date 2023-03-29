@@ -7,7 +7,8 @@ tag: seo webdevelopment kolkata india usa
 excerpt_separator: <!--more-->
 ---
 
-Introduction
+<span style="font-size: x-large; font-weight: bolder;">Introduction</span>
+<br><br>
 Kolkata is a hotbed for web development in India, and staying up-to-date with the latest trends<!--more--> is crucial for success. In this blog post, we'll explore the top web development trends in Kolkata in 2023 and provide insights on how to leverage these trends to stay ahead of the competition.
 <br><br>
 <span style="font-size: x-large; font-weight: bolder;">1 . Progressive Web Apps</span><br>
