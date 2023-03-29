@@ -13,43 +13,33 @@ layout: default
     </div>
 </div>
 
+<div class="container text-center">
+    <div class="row">
+        {% if page.image %}
+        <div class="col-md-12">
+            {% assign image_path = '/assets/images/' | append: page.image %}
+            {% assign image_alt = page.title | replace: '"', "'" | truncatewords: 20, '' %}
+            <img class="img-fluid" src="{{ image_path | relative_url }}" alt="{{ image_alt }}" style="width: 800px;">
+        </div>
+        {% endif %}
+    </div>
+    <div class="row" style="min-height: 50px;"></div>
+</div>
+
 <div class="container" style="font-family: 'Space Grotesk', sans-serif; font-weight: bolder;">
     <div class="row">
-        <div class="col-md-10"></div>
-        <div class="col-md-2">
-            <a href="{{ author.web }}"><img class="img-fluid" src="/assets/images/Author1.png" alt="" style="width: 100px;"></a>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6" style="margin-bottom: 40px;">
+            <div class="row">
             <time>{{ page.date | date: "%b %-d, %Y, %I:%M %p" }}{% if page.meta %} • {{ page.meta }}{% endif %}</time>
+            </div>
         </div>
         <div class="col-md-6">
-            <p class="float-md-end">
-                <!-- Look the author details up from the site config. -->
-                {% assign author = site.data.authors[page.author] %}
-
-                <!-- Output author details if some exist. -->
-                {% if author %}
-                <span>
-                    <!-- Personal Info. -->
-                    Written by <a href="{{ author.web }}">{{ author.name }}</a>
-                </span>
-                {% endif %}
-            </p>
+            {% include author.html %}
         </div>
     </div>
+    <div class="row" style="min-height: 50px;"></div>
 </div>
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            {% if author.bio %}
-            {% include author_bio.html %}
-            {% endif %}
-        </div>
-    </div>
-</div>
 
 <div class="container" style="font-family: 'Karla', sans-serif; padding-top: 10px; padding-bottom: 10px;">
     <div class="row">

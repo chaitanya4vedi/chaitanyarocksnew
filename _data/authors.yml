@@ -1,6 +1,18 @@
 # Author details.
-team_staff:
-  name: Maverick Group Staff
-  email: eccentricclub@gmail.com
-  web: https://linkedin.com/in/chaitanya4vedi
+- name: Chaitanya Chaturvedi
+  bio: A freelance Web Developer & Designer based in Kolkata, passionate about revolutionising the tech and education industry.
+  email: chaitanya4vedi@gmail.com
+  twitter: chaitanya4vedi
+  github: chaitanya4vedi
+  linkedin: chaitanya4vedi
+  facebook: chaitanya4vedi
+  instagram: chaitanya4vedi
+  image: Chaitanya_Crop-min.jpg
+
+- name: Jane Smith
+  bio: Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
+  email: jane.smith@example.com
+  twitter: janesmith
+  github: janesmith
+  linkedin:
 

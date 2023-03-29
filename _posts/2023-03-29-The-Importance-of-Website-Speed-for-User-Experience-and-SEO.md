@@ -2,7 +2,7 @@
 layout: post
 title: The Importance of Website Speed for User Experience and SEO
 description: Website speed is crucial for both user experience and search engine optimization (SEO). In this blog post, we'll explore the impact of website speed on these two critical factors and provide tips for improving your website's speed to enhance user experience and boost SEO.
-author: team_staff
+author: Chaitanya Chaturvedi
 tag: seo webdevelopment kolkata india usa
 excerpt_separator: <!--more-->
 ---

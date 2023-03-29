@@ -1,10 +1,45 @@
-{% assign author = site[page.author] %}
-{% if author %}
-<span>
-    Written by {{ author.name }}
-  </span>
-{% else %}
-<span>
-    Written by Toby Osbourn
-  </span>
-{% endif %}
+{% assign author = site.data.authors | where: "name", page.author | first %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+        <img src="/assets/images/{{ author.image }}" alt="{{ author.name }}" class="img-fluid float-md-end rounded" style="width: 90px; border: 2px solid #107869;">
+            </div>
+            <div class="col-md-10">
+        <h3>{{ author.name }}</h3>
+        <p style="font-weight: lighter;">{{ author.bio }}</p>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-2">
+            {% if author.email %}
+            <a href="mailto:{{ author.email }}"><i class="fa fa-envelope" style="font-size: x-large; color: #107869;"></i></a>
+            {% endif %}
+            </div>
+            <div class="col-2">
+            {% if author.twitter %}
+            <a href="https://twitter.com/{{ author.twitter }}"><i class="fa fa-twitter" style="font-size: x-large; color: #107869;"></i></a>
+            {% endif %}
+            </div>
+                <div class="col-2">
+            {% if author.github %}
+            <a href="https://github.com/{{ author.github }}"><i class="fa fa-github" style="font-size: x-large; color: #107869;"></i></a>
+            {% endif %}
+                </div>
+            <div class="col-2">
+                {% if author.linkedin %}
+                <a href="https://linkedin.com/in/{{ author.linkedin }}"><i class="fa fa-linkedin" style="font-size: x-large; color: #107869;"></i></a>
+                {% endif %}
+            </div>
+            <div class="col-2">
+                {% if author.instagram %}
+                <a href="https://instagram.com/{{ author.instagram }}"><i class="fa fa-instagram" style="font-size: x-large; color: #107869;"></i></a>
+                {% endif %}
+            </div>
+            <div class="col-2">
+                {% if author.facebook %}
+                <a href="https://facebook.com/{{ author.facebook }}"><i class="fa fa-facebook" style="font-size: x-large; color: #107869;"></i></a>
+                {% endif %}
+            </div>
+    </div>
+    </div>
+
