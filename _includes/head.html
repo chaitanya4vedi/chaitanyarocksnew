@@ -17,7 +17,7 @@
 	{% endif %}
 	<meta property="og:type" content="website" />
 	{% if page.meta_image %}
-	<meta property="og:image" content="{{ page.meta_image | absolute_url }}">
+	<meta property="og:image" content="{{ site.url }}/assets/images/{{ page.meta_image }}">
 	{% else %}
 	<meta property="og:image" content="{{ site.url }}/assets/images/MetaImageBG.png">
 	{% endif %}
