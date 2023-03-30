@@ -408,3 +408,38 @@ description: Maverick Group is a leading web design agency in Kolkata, offering 
   </div>
   <div class="row" style="min-height: 75px;"></div>
 </div>
+
+
+<div class="container-fluid" style="background-color: #EDE4E3;">
+<div class="container" style="padding-top: 50px; padding-bottom: 50px;">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="display-6" style="font-family: 'Space Grotesk', sans-serif; color: darkgreen; font-weight: bolder;">Recent Posts &#8594;</h1>
+    </div>
+  </div>
+  <div class="row">
+    {% for post in site.posts limit:2 %}
+    <div class="col-md-6" style="margin-bottom: 20px;">
+      <div class="card" style="font-family: 'Space Grotesk', sans-serif; min-height: 330px; border-radius: 2em;">
+        <div class="card-body">
+          <h5 class="card-title" style="color: darkgreen; font-weight: bolder; padding: 15px;">
+            {{ post.title }}
+          </h5>
+          {% if post.excerpt %}
+          <div class="row" style="padding: 15px;">
+            <div class="col-md-12">
+              {{ post.excerpt }}
+              {% endif %}
+              <a class="btn btn-success" href="{{ post.url | prepend: site.baseurl }}">Read More &#x2192;</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <time>{{ post.date | date: "%b %-d, %Y, %I:%M %p" }}</time>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+</div>
