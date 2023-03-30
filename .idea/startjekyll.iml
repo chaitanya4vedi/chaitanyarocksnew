@@ -9,5 +9,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="buy-button" level="application" />
+    <orderEntry type="library" name="mc-validate" level="application" />
   </component>
 </module>
