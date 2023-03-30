@@ -20,11 +20,6 @@
             <a href="https://twitter.com/{{ author.twitter }}"><i class="fa fa-twitter" style="font-size: x-large; color: #107869;"></i></a>
             {% endif %}
             </div>
-                <div class="col-2">
-            {% if author.github %}
-            <a href="https://github.com/{{ author.github }}"><i class="fa fa-github" style="font-size: x-large; color: #107869;"></i></a>
-            {% endif %}
-                </div>
             <div class="col-2">
                 {% if author.linkedin %}
                 <a href="https://linkedin.com/in/{{ author.linkedin }}"><i class="fa fa-linkedin" style="font-size: x-large; color: #107869;"></i></a>
@@ -38,6 +33,11 @@
             <div class="col-2">
                 {% if author.facebook %}
                 <a href="https://facebook.com/{{ author.facebook }}"><i class="fa fa-facebook" style="font-size: x-large; color: #107869;"></i></a>
+                {% endif %}
+            </div>
+            <div class="col-2">
+                {% if author.github %}
+                <a href="https://github.com/{{ author.github }}"><i class="fa fa-github" style="font-size: x-large; color: #107869;"></i></a>
                 {% endif %}
             </div>
     </div>
