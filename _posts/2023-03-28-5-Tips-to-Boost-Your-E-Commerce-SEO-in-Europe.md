@@ -3,6 +3,8 @@ layout: post
 title: 5 Tips to Boost Your E-Commerce SEO in Europe
 description: If you're an e-commerce business in Europe, optimizing your website for search engines is crucial to attract more traffic and increase sales. Maverick Group, a leading web development agency based in Kolkata, India, shares their expert insights on how to boost your e-commerce SEO in Europe with these 5 tips.
 author: Chaitanya Chaturvedi
+meta_title: 5 Tips to Boost Your E-Commerce SEO in Europe
+meta_description: If you're an e-commerce business in Europe, optimizing your website for search engines is crucial to attract more traffic and increase sales. Maverick Group, a leading web development agency based in Kolkata, India, shares their expert insights on how to boost your e-commerce SEO in Europe with these 5 tips.
 tag: seo webdevelopment europe india usa
 excerpt_separator: <!--more-->
 ---

@@ -3,6 +3,8 @@ layout: post
 title: The Top 5 SEO Trends for 2023 and How to Stay Ahead of the Game
 description: Stay ahead of the game with these top 5 SEO trends for 2023. Maverick Group, a leading web development agency based in Kolkata, India, shares their expert insights on the latest SEO trends that businesses need to know.
 author: Chaitanya Chaturvedi
+meta_title: The Top 5 SEO Trends for 2023 and How to Stay Ahead of the Game
+meta_description: Stay ahead of the game with these top 5 SEO trends for 2023. Maverick Group, a leading web development agency based in Kolkata, India, shares their expert insights on the latest SEO trends that businesses need to know.
 tag: seo webdevelopment kolkata india usa
 excerpt_separator: <!--more-->
 ---
