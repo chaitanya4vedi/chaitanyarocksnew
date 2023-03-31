@@ -1,49 +1,75 @@
-// Define the cache names
-const CACHE_NAME = 'maverickgroup-v1';
-const urlsToCache = [
-    '/',
-    '/index.html',
-    '/css/main.css',
-    '/assets/js/main.js',
-    '/assets/images/MaverickGroupLogoGreen.png'
-];
+'use strict';
+
+const offlineCache = 'offline-2023-02-31'; // The cache key, you can override this to manually clear the cache
+const offlinePage = '/offline/'; // Where your offline page lives
+const contactPage = '/contact/'; // A key page you want cached
+const about = '/about/'; // Another key page to cache
+const blog = '/blog/'; // Another key page to cache
+const index = '/index/'; // Another key page to cache
+const privacy = '/privacy/' // Another key page to cache
+const disclaimer = '/disclaimer/'; // Another key page to cache
+const termsofservice = '/termsofservice/'; // Another key page to cache
+
+// Delete caches that do not match the current version of the service worker.
+function clearOldCaches() {
+    return caches.keys().then(keys => {
+        return Promise.all(
+            keys
+                .filter(key => key.indexOf(offlineCache) !== 0)
+                .map(key => caches.delete(key))
+        );
+    });
+}
+
+// Precache specific pages
+function cacheOfflinePage() {
+    return caches.open(offlineCache)
+        .then(cache => {
+            return cache.addAll([offlinePage, contactPage, about, index, blog, privacy, termsofservice, disclaimer]);
+        })
+        .catch(error => {})
+}
 
 // Install the service worker
 self.addEventListener('install', event => {
     event.waitUntil(
-        caches.open(CACHE_NAME)
-            .then(cache => {
-                console.log('Cache opened');
-                return cache.addAll(urlsToCache);
-            })
+        cacheOfflinePage()
+            .then( () => self.skipWaiting() )
     );
 });
 
-// Fetch the resources from the cache or network
-self.addEventListener('fetch', event => {
-    event.respondWith(
-        caches.match(event.request)
-            .then(response => {
-                if (response) {
-                    return response;
-                }
-                return fetch(event.request);
-            })
-    );
-});
-
-// Clean up old caches
+// Activate the service worker
 self.addEventListener('activate', event => {
     event.waitUntil(
-        caches.keys().then(cacheNames => {
-            return Promise.all(
-                cacheNames.filter(cacheName => {
-                    return cacheName.startsWith('maverickgroup-') &&
-                        cacheName !== CACHE_NAME;
-                }).map(cacheName => {
-                    return caches.delete(cacheName);
-                })
-            );
-        })
+        clearOldCaches()
+            .then(() => self.clients.claim())
+    );
+});
+
+// Try and serve up cached page, or else show networked page, or else show offline page
+
+self.addEventListener('fetch', event => {
+    let request = event.request;
+
+    event.respondWith(
+        caches.match(request)
+            .then(response => {
+                return response || fetch(request)
+                    .then( response => {
+                        // NETWORK
+                        if (response && response.ok) {
+                            let copy = response.clone();
+                            caches.open(offlineCache)
+                                .then( cache => cache.put(request, copy) );
+                        }
+                        return response;
+                    })
+                    .catch( error => {
+                        // OFFLINE
+                        if (request.mode === 'navigate') {
+                            return caches.match(offlinePage);
+                        }
+                    });
+            })
     );
 });
