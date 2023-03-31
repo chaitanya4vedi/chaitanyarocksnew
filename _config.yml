@@ -15,17 +15,11 @@ kramdown:
   input: GFM
 
 defaults:
-  -
-    scope:
-      path: "" # empty string means all files and directories
+  - scope:
+      path: ""
     values:
-      title:
-      meta_title:
-      description:
-      meta_description:
-      image:
-      meta_image:
-      author:
-      tag:
-      excerpt_separator: <!--more-->
-
+      content_type: "text/html"
+  - scope:
+      path: "service-worker.js"
+    values:
+      content_type: "application/javascript"
