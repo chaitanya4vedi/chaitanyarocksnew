@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  repo: chaitanya4vedi/mavericknew
+  repo: chaitanya4vedi/MaverickGroupNew
   branch: gh-pages # Branch to update (optional; defaults to master)
 
 publish_mode: editorial_workflow
