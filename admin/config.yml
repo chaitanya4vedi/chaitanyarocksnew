@@ -3,9 +3,8 @@
     repo: chaitanya4vedi/maverickgroupnew
     branch: master
     publish_mode: editorial_workflow
-
-media_folder: "assets/images" # Media files will be stored in the repo under images/uploads
-public_folder: "/assets/images" # The src attribute for uploaded media will begin with /images/uploads
+    media_folder: "assets/images" # Media files will be stored in the repo under images/uploads
+    public_folder: "/assets/images" # The src attribute for uploaded media will begin with /images/uploads
 
 collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
