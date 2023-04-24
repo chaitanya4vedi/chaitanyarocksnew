@@ -57,6 +57,7 @@
 		});
 	});
 </script>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <script>
 	if (window.netlifyIdentity) {
 		window.netlifyIdentity.on("init", user => {
@@ -67,4 +68,17 @@
 			}
 		});
 	}
+</script>
+<script src="https://cdn.jsdelivr.net/npm/netlify-cms-app@2.15.1/dist/netlify-cms-app.js"></script>
+<script>
+	NetlifyCmsApp.init({
+		config: {
+			backend: {
+				name: "git-gateway",
+				branch: "main",
+				repo: "<your-repo>",
+				api_root: "/.netlify/identity",
+			},
+		},
+	});
 </script>
