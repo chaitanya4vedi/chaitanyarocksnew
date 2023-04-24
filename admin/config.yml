@@ -1,5 +1,4 @@
-backend:
-  backend:
+ backend:
     name: git-gateway
     repo: chaitanya4vedi/maverickgroupnew
     branch: master
